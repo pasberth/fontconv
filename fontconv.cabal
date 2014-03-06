@@ -1,0 +1,27 @@
+name:           fontconv
+version:        1.0.0
+cabal-Version:  >= 1.2
+build-type:     Simple
+license:        MIT
+license-file:   LICENSE
+copyright:      Copyright (C) 2014 Pasberth
+homepage:       https://github.com/pasberth/fontconv
+bug-reports:    https://github.com/pasberth/fontconv/issues
+author:         Pasberth
+maintainer:     Pasberth <pasberth@gmail.com>
+stability:      experimental
+synopsis:       A client of onlinefontconverter.com
+description:
+  This is a client of http://onlinefontconverter.com with Shelly.
+  .
+  The fontconv package provides only the command fontconv converting fonts to/from .svg, .ttf, .woff, etc.
+
+category:       Font, Tools
+
+Executable fontconv
+  main-is:        fontconv.hs
+  build-depends:
+    base,
+    text,
+    system-filepath,
+    shelly
