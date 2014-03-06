@@ -1,0 +1,28 @@
+= fontconv
+
+A client of http://onlinefontconverter.com[onlinefontconverter.com]
+
+== Quick Usage
+
+First, you need take a credential on https://www.mashape.com/[mashape].
+
+Next, build the fontconv.hs with cabal-dev.
+
+For example, the following command converts font1.svg and font2.ttf to ttf and woff.
+
+.usage
+----
+cabal-dev install
+./../fontconv/cabal-dev/bin/fontconv -k $MASHAPE_KEY \
+    -d out-dir font1.svg font2.ttf -f ttf -f woff
+----
+
+.result
+----
+ls out-dir
+# font1.ttf
+# font1.woff
+# font2.ttf
+# font2.woff
+----
+
